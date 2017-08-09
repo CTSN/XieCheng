@@ -161,27 +161,52 @@ var {width} =Dimensions.get('window');
 
 ## 实现中间的内容栏
 
+今天实现首页中间的内容栏，原效果如下：
+
+<img src="03.png" width="300">
+
+红框就是今天需要实现的内容
+
+这里可以拆解成四个部分，每个部分都是由相同组件，填充不同内容来实现。
+
 ### 简单布局的实现
+
+在homebean首页json数据中，设置了一个**itemBeans**的集合数据，存放着我们需要实现的四个部分组件的数据。
+
+![](04.png)
+
+在homepage中遍历**itemBeans**这个集合数据，并简单的创建四个View组件，预先占位，后面再逐一实现。
 
 ![](16.png)
 
 ### 定义一个CenterBar组件
 
+创建CenterBar的组件，这个组件就是四个部分的组件了。
+
 ![](17.png)
 
 ### 使用CenterBar这个组件
 
+在homepage中使用CenterBar这个组件替换掉遍历创建的View组件
+
 ![](18.png)
-
-
 
 ### 传数据到CenterBar组件中
 
 ####1.传递数据到CenterBar中
 
+CenterBar设置一个属性了**itemBean**来接收**itemBeans**数据中对应item对象内容。
+
 ![](19.png)
 
 ####2.CenterBar接收数据
+
+在CenterBar通过**this.props.itemBean**来获取接受到的**itemBean**数据
+
+```JavaScript
+//接收数据
+var itemBean=this.props.itemBean;
+```
 
 ![](20.png)
 
@@ -189,35 +214,47 @@ var {width} =Dimensions.get('window');
 
 #### 1.布局的搭建
 
+接收完数据，开始CenterBar布局搭建，这里拆分下结构，如图：
+
+<img src="05.png" width="300">
+
+分为左中右结构,中间和右边部分又分为上下结构。
+
 ![](21.png)
 
-对应的样式
+设置属性**flexDirection**为横向布局row，给左中右三部分设置对应的样式，设置flex属性（类似权重属性）,宽度比例为1:1:1。
 
 ![](22.png)
 
 #### 2.完善中间和右边布局
 
+给每一项填充对应数据。
+
 ![](23.png)
 
-抽重复的代码
+因为中间和右边代码一致，抽取重复的代码，只需传入对应的index值，获取对应数据即可。
 
 ![](24.png)
 
 #### 3.完善中、右布局对应的样式
 
-- 添加背景
+- 给每一项添加背景，这里通过**itemBean**数据中有个bgColor的值，给不同item设置不同背景颜色
 
 ![](25.png)
 
-- 字体居中和大小
+- 设置字体居中和大小
 
 ![](26.png)
 
-- 添加边界样式
+- 添加白色边框
 
 ![](27.png)
 
 #### 4.完善左边内容
+
+在**itembean**数据有个type的值用来区分两种类型的item,用来区分item左边部分不同的布局。
+
+![](06.png)
 
 - 添加左边的布局结构
 
@@ -235,8 +272,11 @@ var {width} =Dimensions.get('window');
 
 ![](31.png)
 
+最终效果如下：
 
+![](02.gif)
 
+最后附上[项目地址](https://github.com/CTSN/XieCheng)
 
 
 

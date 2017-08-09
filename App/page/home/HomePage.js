@@ -35,7 +35,7 @@ export  default  class HomePage extends  Component {
                     {/*广告轮播图*/}
                     <Banner banners={homebean.banners}></Banner>
                     {/*内容栏*/}
-                    {/*{this.renderItems(homebean.itemBeans)}*/}
+                    {this.renderItems(homebean.itemBeans)}
 
                 </ScrollView>
             </View>
