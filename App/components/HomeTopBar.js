@@ -15,7 +15,6 @@ import {
  * 1.定义一个HomeTopBar组件，并导出
  */
 export  default  class HomeTopBar extends  Component {
-
     /**
      * 2.渲染组件的页面
      * @returns {XML}

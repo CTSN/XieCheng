@@ -1,0 +1,156 @@
+{
+  "banners":[
+    {"imgUrl":"http://dimg04.c-ctrip.com/images/700p0h0000008zxra5F86_720_286_258.jpg","title":""},
+    {"imgUrl":"http://dimg04.c-ctrip.com/images/700p0e000000736phCFC4_720_286_258.jpg","title":""},
+    {"imgUrl":"http://dimg04.c-ctrip.com/images/700a0j0000009ufid42F2_720_286_258.jpg","title":""},
+    {"imgUrl":"http://dimg04.c-ctrip.com/images/700l0j0000009w4ss559C_720_286_258.jpg","title":""},
+    {"imgUrl":"http://dimg04.c-ctrip.com/images/700g0e0000007354qBE83_720_286_258.jpg","title":""}
+  ],
+
+  "itemBeans":[
+    {
+      "type":0,
+      "imageUrl":"https://github.com/CTSN/XieCheng/blob/master/icon/b_hotel.png?raw=true",
+      "title":"酒店",
+      "tagUrl":"",
+      "items":[
+          {"imageUrl":"","title":"海外酒店","tagUrl":""},
+          {"imageUrl":"","title":"团购","tagUrl":""},
+          {"imageUrl":"","title":"特价酒店","tagUrl":""},
+          {"imageUrl":"","title":"民宿酒店","tagUrl":""}
+      ],
+      "bgColor":"#FB5265"
+    },
+    {
+      "type":0,
+      "imageUrl":"https://github.com/CTSN/XieCheng/blob/master/icon/plane.png?raw=true",
+      "title":"机票",
+      "tagUrl":"",
+      "items":[
+        {"imageUrl":"","title":"火车盘票","tagUrl":"http://images4.c-ctrip.com/target/zc010i0000009iwizFEDF.png_.webp"},
+        {"imageUrl":"","title":"汽车票.船票","tagUrl":""},
+        {"imageUrl":"","title":"特价机票","tagUrl":""},
+        {"imageUrl":"","title":"专车.租车","tagUrl":""}
+      ],
+      "bgColor":"#3C99FF"
+    },
+    {
+      "type":0,
+      "imageUrl":"https://github.com/CTSN/XieCheng/blob/master/icon/goodess.png?raw=true",
+      "title":"旅游",
+      "tagUrl":"",
+      "items":[
+        {"imageUrl":"","title":"目的地攻略","tagUrl":""},
+        {"imageUrl":"","title":"游轮旅游","tagUrl":""},
+        {"imageUrl":"","title":"周边游","tagUrl":""},
+        {"imageUrl":"","title":"定制旅行","tagUrl":""}
+      ],
+      "bgColor":"#50C72D"
+    },
+    {
+      "type":1,
+      "imageUrl":"",
+      "title":"",
+      "tagUrl":"",
+      "items":[
+        {"imageUrl":"","title":"景点.玩乐","tagUrl":""},
+        {"imageUrl":"","title":"美食林","tagUrl":""},
+        {"imageUrl":"","title":"购物.信用卡","tagUrl":""},
+        {"imageUrl":"","title":"礼品卡","tagUrl":"http://images4.c-ctrip.com/target/zc0g0j0000009y19j3A78.png_.webp"},
+        {"imageUrl":"","title":"Wifi.电话卡","tagUrl":""},
+        {"imageUrl":"","title":"保险.签证","tagUrl":""}
+      ],
+      "bgColor":"#F9961F"
+    }
+  ],
+
+
+  "categroys":[
+    {"icon":"https://github.com/CTSN/XieCheng/blob/master/icon/free.png?raw=true","title":"自由行","tagUrl":""},
+    {"icon":"http://images4.c-ctrip.com/target/zc0e0e00000073cwaE584.png_.webp","title":"微领队","tagUrl":""},
+    {"icon":"https://github.com/CTSN/XieCheng/blob/master/icon/one_day.png?raw=true","title":"一日游","tagUrl":""},
+    {"icon":"https://github.com/CTSN/XieCheng/blob/master/icon/high.png?raw=true","title":"高端游","tagUrl":""},
+
+    {"icon":"https://github.com/CTSN/XieCheng/blob/master/icon/hotel.png?raw=true","title":"酒店+景点","tagUrl":""},
+    {"icon":"http://images4.c-ctrip.com/target/zc090f0000007kvt9EABD.png_.webp","title":"海外玩乐","tagUrl":""},
+    {"icon":"https://github.com/CTSN/XieCheng/blob/master/icon/luggage.png?raw=true","title":"行李管家","tagUrl":""},
+    {"icon":"https://github.com/CTSN/XieCheng/blob/master/icon/work.png?raw=true","title":"加盟合作","tagUrl":""},
+
+    {"icon":"https://github.com/CTSN/XieCheng/blob/master/icon/change.png?raw=true","title":"外币兑换","tagUrl":""},
+    {"icon":"https://github.com/CTSN/XieCheng/blob/master/icon/zan.png?raw=true","title":"当季去哪","tagUrl":""},
+    {"icon":"https://github.com/CTSN/XieCheng/blob/master/icon/park.png?raw=true","title":"机场停车","tagUrl":""},
+    {"icon":"https://github.com/CTSN/XieCheng/blob/master/icon/more.png?raw=true","title":"更多服务","tagUrl":""}
+
+  ],
+
+
+  "benefit":{
+    "type":0,
+    "title":"特实汇",
+    "descrption":"更多特卖",
+    "benefitItem": {
+      "imageUrl": "https://dimg04.c-ctrip.com/images/300c0i0000009meu770AF_C_360_202.jpg",
+      "title": "巴沙5日4晚自由行",
+      "tagUrl": "",
+      "descrption": "【国庆早定立减300】巴沙5日4晚自由行",
+      "descrptionTextColor": "",
+      "price": 38,
+      "marketPrice": 100,
+      "priceColor": "",
+      "items": [
+        {
+          "imageUrl": "https://images4.c-ctrip.com/target/zc0j0d0000006vmc20F41.png",
+          "title": "千层特价",
+          "tagUrl": "",
+          "descrption": "走过路过不要错过",
+          "descrptionTextColor": "",
+          "price": 38,
+          "marketPrice": 100,
+          "priceColor": ""
+        },
+        {
+          "imageUrl": "https://images4.c-ctrip.com/target/zc0a0d0000006vlsuD30E.png",
+          "title": "海外精选",
+          "tagUrl": "",
+          "descrption": "百元出境游",
+          "descrptionTextColor": "",
+          "price": 38,
+          "marketPrice": 100,
+          "priceColor": ""
+        },
+        {
+          "imageUrl": "https://images4.c-ctrip.com/target/zc0b0d0000006vn1w5084.png",
+          "title": "周边玩乐",
+          "tagUrl": "",
+          "descrption": "十元度周末",
+          "descrptionTextColor": "",
+          "price": 38,
+          "marketPrice": 100,
+          "priceColor": ""
+        }
+      ]
+    }
+  },
+
+
+  "hotPalys":{
+    "type":1,
+    "title":"热门活动",
+    "descrption":"获取更多福利",
+    "playItem":{
+      "imageUrl":"https://images3.c-ctrip.com/rk/201706/AD02-cs375.jpg",
+      "tagUrl":"",
+      "descrptionTextColor":"",
+      "price":38,
+      "marketPrice":100,
+      "priceColor":"",
+      "items":[
+        {"imageUrl":"https://pages.c-ctrip.com/commerce/rk/2017/08/gh3.png","tagUrl":"","descrptionTextColor":"","price":38,"marketPrice":100,"priceColor":""},
+        {"imageUrl":"http://images3.c-ctrip.com/rk/apph5/B1/201707/app_home_ad03_js3751871.png","tagUrl":"","descrptionTextColor":"","price":38,"marketPrice":100,"priceColor":""},
+        {"imageUrl":"http://images3.c-ctrip.com/rk/201707/app_home_ad07_qx375187.jpg","tagUrl":"","descrptionTextColor":"","price":38,"marketPrice":100,"priceColor":""},
+        {"imageUrl":"https://images3.c-ctrip.com/rk/201706/AD03-qd375.jpg","tagUrl":"","descrptionTextColor":"","price":38,"marketPrice":100,"priceColor":""}
+      ]
+    }
+  }
+
+}

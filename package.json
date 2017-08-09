@@ -11,6 +11,7 @@
   "dependencies": {
     "react": "16.0.0-alpha.12",
     "react-native": "0.47.1",
+    "react-native-swiper": "^1.5.5",
     "react-native-tab-navigator": "^0.3.3"
   },
   "devDependencies": {
