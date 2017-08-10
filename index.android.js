@@ -14,6 +14,7 @@ import {
 //导入组件
 import MainPage from  './App/page/main/MainPage';
 
+console.disableYellowBox = true;
 export default class XieCheng extends Component {
   render() {
     return (
