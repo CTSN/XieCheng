@@ -36,12 +36,12 @@ export  default  class MainPage extends  Component {
                 {/*首页*/}
                 <TabNavigator.Item
                     renderIcon={ ()=> <Image style={styles.imageStyle}
-                                        source={require('../../image/home_icon_nornol.png')}></Image>}
+                                        source={require('../../image/home_icon_nornol.png')}/>}
                     title="首页"
 
                     selected={this.state.selected=='首页'}
                     renderSelectedIcon={ ()=> <Image style={styles.imageStyle}
-                                        source={require('../../image/home_icon_press.png')}></Image>}
+                                        source={require('../../image/home_icon_press.png')}/>}
 
                     onPress={ ()=> this.setState({
                         selected:'首页'
@@ -54,12 +54,12 @@ export  default  class MainPage extends  Component {
                 {/*行程*/}
                 <TabNavigator.Item
                     renderIcon={ ()=> <Image style={styles.imageStyle}
-                                        source={require('../../image/plan_icon_nornol.png')}></Image>}
+                                        source={require('../../image/plan_icon_nornol.png')}/>}
                     title="行程"
 
                     selected={this.state.selected=='行程'}
                     renderSelectedIcon={ ()=> <Image style={styles.imageStyle}
-                                        source={require('../../image/plan_icon_press.png')}></Image>}
+                                        source={require('../../image/plan_icon_press.png')}/>}
 
                     onPress={ ()=> this.setState({
                         selected:'行程'
@@ -73,12 +73,12 @@ export  default  class MainPage extends  Component {
                 {/*客服*/}
                 <TabNavigator.Item
                     renderIcon={ ()=> <Image style={styles.imageStyle}
-                                        source={require('../../image/customer_icon_nornol.png')}></Image>}
+                                        source={require('../../image/customer_icon_nornol.png')}/>}
                     title="客服"
 
                     selected={this.state.selected=='客服'}
                     renderSelectedIcon={ ()=> <Image style={styles.imageStyle}
-                                        source={require('../../image/customer_icon_press.png')}></Image>}
+                                        source={require('../../image/customer_icon_press.png')}/>}
 
                     onPress={ ()=> this.setState({
                         selected:'客服'
@@ -89,12 +89,12 @@ export  default  class MainPage extends  Component {
                 {/*我的*/}
                 <TabNavigator.Item
                     renderIcon={ ()=> <Image style={styles.imageStyle}
-                                        source={require('../../image/mine_icon_nornol.png')}></Image>}
+                                        source={require('../../image/mine_icon_nornol.png')}/>}
                     title="我的"
 
                     selected={this.state.selected=='我的'}
                     renderSelectedIcon={ ()=> <Image style={styles.imageStyle}
-                                        source={require('../../image/mine_icon_press.png')}></Image>}
+                                        source={require('../../image/mine_icon_press.png')}/>}
 
                     onPress={ ()=> this.setState({
                         selected:'我的'
@@ -106,6 +106,14 @@ export  default  class MainPage extends  Component {
 
             </TabNavigator>
         )
+    }
+
+    selected(item){
+        let text = this.state.selected;
+        if (item == text){
+            return true;
+        }
+        return false;
     }
 }
 /**
