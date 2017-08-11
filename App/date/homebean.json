@@ -86,7 +86,7 @@
 
   "benefit":{
     "type":0,
-    "title":"特实汇",
+    "title":"特卖汇",
     "descrption":"更多特卖",
     "benefitItem": {
       "imageUrl": "https://dimg04.c-ctrip.com/images/300c0i0000009meu770AF_C_360_202.jpg",
@@ -100,7 +100,7 @@
       "items": [
         {
           "imageUrl": "https://images4.c-ctrip.com/target/zc0j0d0000006vmc20F41.png",
-          "title": "千层特价",
+          "title": "千款特价",
           "tagUrl": "",
           "descrption": "走过路过不要错过",
           "descrptionTextColor": "",

@@ -31,7 +31,7 @@ export  default  class MainPage extends  Component {
     render(){
         return (
             <TabNavigator
-                tabBarStyle={{backgroundColor:'#e1e1e1',height:50}}
+                tabBarStyle={{backgroundColor:'white',height:50}}
             >
                 {/*首页*/}
                 <TabNavigator.Item
