@@ -12,7 +12,10 @@ import {
     Dimensions
 } from 'react-native';
 
-export default class CenterItems extends Component {
+/**
+ * 定义分类栏组件
+ */
+export default class CategroyBar extends Component {
 
     /**
      *
@@ -22,6 +25,10 @@ export default class CenterItems extends Component {
         categroys: null,
     }
 
+    /**
+     * 渲染组件
+     * @returns {XML}
+     */
     render() {
         var categroyItems = this.props.categroys;
         return (
@@ -31,7 +38,11 @@ export default class CenterItems extends Component {
         );
 
     }
-
+    /**
+     * 遍历创建每个item
+     * @param categroyItems
+     * @returns {Array} 返回item数据
+     */
     renderCategroys(categroyItems) {
         //1.定义组件数组
         var Items = [];

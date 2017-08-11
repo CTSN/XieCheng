@@ -14,7 +14,7 @@ import {
 import  HomeTopBar from '../../components/HomeTopBar';
 import  Banner from '../../components/Banner';
 import  CenterBar from '../../components/CenterBar';
-import CenterItems from  '../../components/CenterItems';
+import CategroyBar from  '../../components/CategroyBar';
 import SaleBar from '../../components/SaleBar';
 import HotContentBar from '../../components/HotContentBar';
 //导入数据
@@ -83,9 +83,7 @@ export  default  class HomePage extends Component {
             var newCategroys = categroys.slice(4 * i, 4 * (i + 1));
             //3.添加组件
             Categroys.push(
-                <View key={i}>
-                    <CenterItems categroys={newCategroys}/>
-                </View>
+                <CategroyBar key={i} categroys={newCategroys}/>
             )
         }
         //4.返回组件数组
@@ -100,9 +98,9 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#f8f8f8'
     },
-    categroys:{
-        backgroundColor:'white',
-        borderRadius:5,
-        margin:5,
+    categroys: {
+        backgroundColor: 'white',
+        borderRadius: 5,
+        margin: 5,
     },
 })

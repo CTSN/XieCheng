@@ -22,19 +22,23 @@ export default class SaleBar extends Component {
 
     render() {
         var benefitData = this.props.benefit;
+        // 接收左边数据
         var benefitItem = benefitData.benefitItem;
+        // 接收右边数据
         var benefitItems = benefitItem.items;
 
         return (
             <View style={styles.container}>
-                {/*顶部标题*/}
-                <TitleBar left_text={benefitData.title} right_text={benefitData.descrption}/>
-                {/*内容部分*/}
-                <View style={styles.bottom}>
-                    {/*左边*/}
-                    {this.renderLeft(benefitItem)}
+                {/*上边 标题部分*/}
+                <TitleBar
+                    left_text={benefitData.title}
+                    right_text={benefitData.descrption}/>
 
-                    {/*右边*/}
+                {/*下边 内容部分*/}
+                <View style={styles.bottom}>
+                    {/*左边部分*/}
+                    {this.renderLeft(benefitItem)}
+                    {/*右边部分*/}
                     {this.renderRight(benefitItems)}
                 </View>
             </View>
@@ -46,28 +50,23 @@ export default class SaleBar extends Component {
      * @param benefitItem
      */
     renderLeft(benefitItem) {
-
         return <View style={styles.left}>
-            <View><Image style={styles.left_img} source={{uri:benefitItem.imageUrl}}/></View>
+            <View>
+                <Image style={styles.left_img}
+                       source={{uri:benefitItem.imageUrl}}/>
+            </View>
 
-            <Text style={{fontSize:14,marginLeft:10,marginRight:10,marginTop:5,marginBottom:5,}}
+            <Text style={styles.left_text}
                   numberOfLines={2}>
                 {benefitItem.title}·{benefitItem.descrption}
             </Text>
 
-            <View style={{alignItems:'center',flexDirection:'row',marginLeft:10,marginRight:10,}}>
-                <Text style={{color:'#F9961F',marginRight:5,}}>¥{benefitItem.marketPrice}起</Text>
+            <View style={styles.left_content}>
+                <Text style={{color:'#F9961F',marginRight:5,}}>
+                    ¥{benefitItem.marketPrice}起
+                </Text>
 
-                <Text style={{
-                    backgroundColor:'#F9961F',
-                    height:13,
-                    lineHeight:13,
-                    textAlign:'center',
-                    color:'white',
-                    borderRadius:8,
-                    fontSize:11,
-                    paddingLeft:4,
-                    paddingRight:4,}}>
+                <Text style={styles.left_content_round}>
                     省 ¥ {benefitItem.marketPrice - benefitItem.price}
                 </Text>
             </View>
@@ -79,16 +78,23 @@ export default class SaleBar extends Component {
      * @param benefitItems
      */
     renderRight(benefitItems) {
-
         return <View style={styles.right}>
             {/*上边*/}
             <View style={styles.right_top}>
+                {/*左边*/}
                 <View style={{marginLeft:10,marginRight:5}}>
-                    <Text style={{marginBottom:5,marginTop:15}}>{benefitItems[0].title}</Text>
-                    <Text style={{marginBottom:10}}>{benefitItems[0].descrption}</Text>
+                    <Text style={{marginBottom:5,marginTop:15}}>
+                        {benefitItems[0].title}
+                    </Text>
+
+                    <Text style={{marginBottom:10}}>
+                        {benefitItems[0].descrption}
+                    </Text>
                 </View>
+                {/*右边*/}
                 <View>
-                    <Image style={{width:50,height:50,}} source={{uri:benefitItems[0].imageUrl}}/>
+                    <Image style={{width:50,height:50,}}
+                           source={{uri:benefitItems[0].imageUrl}}/>
                 </View>
             </View>
             {/*下边*/}
@@ -102,11 +108,17 @@ export default class SaleBar extends Component {
 
     }
 
-    renderItem(item){
-        return <View style={{flex:1,backgroundColor: '#f8f8f8',alignItems:'center',marginRight:2,}}>
+    /**
+     * 渲染右侧下面item
+     * @param item
+     * @returns {XML}
+     */
+    renderItem(item) {
+        return <View style={styles.right_bottom_item}>
             <Text>{item.title}</Text>
             <Text>{item.descrption}</Text>
-            <Image style={{width:50,height:50,}} source={{uri:item.imageUrl}}/>
+            <Image style={{width:50,height:50,}}
+                   source={{uri:item.imageUrl}}/>
         </View>
     }
 }
@@ -138,14 +150,44 @@ const styles = StyleSheet.create({
         width: 200,
         height: 90,
     },
+    left_text: {
+        fontSize: 14,
+        marginLeft: 10,
+        marginRight: 10,
+        marginTop: 5,
+        marginBottom: 5,
+    },
+    left_content: {
+        alignItems: 'center',
+        flexDirection: 'row',
+        marginLeft: 10,
+        marginRight: 10,
+    },
+    left_content_round: {
+        backgroundColor: '#F9961F',
+        height: 13,
+        lineHeight: 13,
+        textAlign: 'center',
+        color: 'white',
+        borderRadius: 8,
+        fontSize: 11,
+        paddingLeft: 4,
+        paddingRight: 4,
+    },
     right: {
         flex: 1,
     },
-    right_top:{
-        flex:1,
-        flexDirection:'row',
+    right_top: {
+        flex: 1,
+        flexDirection: 'row',
         backgroundColor: '#f8f8f8',
-        alignItems:'center',
-        marginRight:2,
+        alignItems: 'center',
+        marginRight: 2,
+    },
+    right_bottom_item: {
+        flex: 1,
+        backgroundColor: '#f8f8f8',
+        alignItems: 'center',
+        marginRight: 2,
     },
 });

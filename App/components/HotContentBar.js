@@ -29,7 +29,7 @@ export default class HotContentBar extends Component {
             <View style={styles.container}>
                 {/*标题*/}
                 <TitleBar left_text={data.title} right_text={data.descrption}/>
-                {/*上边*/}
+                {/*中间*/}
                 {this.renderTop(items)}
                 {/*下边*/}
                 {this.renderBottom(items)}
@@ -41,7 +41,9 @@ export default class HotContentBar extends Component {
         return <View style={styles.top}>
             {/*左边*/}
             <View style={{flex:1,marginRight:1}}>
-                <Image style={{width:windowWidth/2,height:windowWidth/2}} source={{uri:items.imageUrl}}/>
+                <Image
+                    style={{width:windowWidth/2,height:windowWidth/2}}
+                    source={{uri:items.imageUrl}}/>
             </View>
             {/*右边*/}
             <View style={{flex:1,}}>
